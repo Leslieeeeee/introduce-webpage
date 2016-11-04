@@ -7,7 +7,9 @@
     <title>Introduce</title>
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="F://introduce/javascript1.js"></script>
+    <script  type="text/javascript" src="F://introduce/javascript1.js"></script>
+    <script src="../bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>
+    <script src="../bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
     <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
     <link type="text/css" rel="stylesheet" href="F://introduce/a.css">
@@ -20,34 +22,33 @@
        <div class="container-fluid">
        <div style="width: 10px height:10px background-color:#FFF"></div>
          <div class="navbar-header navbar-rights">
-           <a class="navbar-brand" href="#home" style="font-size: 23px"><span class="glyphicon glyphicon-home"></span>首页</a>
+           <a class="navbar-brand" href="#home" style="font-size: 23px"><span class="glyphicon glyphicon-home" ></span>首页</a>
          </div>
        <div>
-             <!--向右对齐-->
            <ul class="nav navbar-nav navbar-right">
              <li class="dropdown">
-                 <a href="#life" class="dropdown-toggle" data-toggle="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown">
                      生活
                      <b class="caret"></b>
                  </a>
                  <ul class="dropdown-menu dropdown-menu-right">
-                     <li><a href="#volunteer">公益</a></li>
-                     <li><a href="#art">美术</a></li>
-                     <li><a href="#reading">读书</a></li>
-                     <li><a href="#music">音乐</a></li>
-                     <li><a href="#skating">花滑</a></li>
+                     <li><a href="#volunteer" onclick="changePlace()">公益</a></li>
+                     <li><a href="#art" onclick="changePlace()">美术</a></li>
+                     <li><a href="#reading" onclick="changePlace()">读书</a></li>
+                     <li><a href="#music" onclick="changePlace()">音乐</a></li>
+                     <li><a href="#skating" onclick="changePlace()">花滑</a></li>
                  </ul>
              </li>
-             <li><a href="#python"><span class="glyphicon glyphicon-home"></span>PYTHON</a></li>
-             <li><a href="#work"><span class="glyphicon glyphicon-home"></span>工作</a></li>            
-             <li><a href="#more"><span class="glyphicon glyphicon-plus"></span>更多</a></li>
-             <li><a href="#message" style="padding-right: 60px"><span class="glyphicon glyphicon-pencil"></span>留言</a></li>
+             <li><a href="#xxx" onclick="changePlace1()"><span class="glyphicon glyphicon-tags"></span>XXX</a></li>
+             <li><a href="#study" onclick="changePlace2()"><span class="glyphicon glyphicon-list-alt"></span>学习</a></li>            
+             <li><a href="#more" onclick="changePlace3()"><span class="glyphicon glyphicon-plus"></span>更多</a></li>
+             <li><a href="#" style="padding-right: 60px"><span class="glyphicon glyphicon-pencil"></span>留言</a></li>         
            </ul>
            <form class="navbar-form navbar-left" role="search">
              <div class="form-group">
                <input type="text" class="form-control" placeholder="此功能尚未开通" style=" outline: none">
              </div>
-               <button type="submit" class="btn btn-default" style="outline: none outline-offset: none;"><span class="glyphicon glyphicon-search"></span></button>
+               <button type="submit" class="btn btn-default" style="outline: none outline-offset: none" onclick="changePlace()"><span class="glyphicon glyphicon-search"></span></button>
            </form>
        </div>
        </div> 
@@ -65,87 +66,158 @@
     <p style="font-size: 20px">正努力学习python中~</p>
     </div>
     </div>
-     <button class="btn button1 btn1-default" onclick="" style="outline: 0" href="#study"><span class="glyphicon glyphicon-chevron-down" style="margin-right: 6px"></span>戳我继续</button>
+     <button id="btn1" class="btn button1 btn1-default" onclick="changePlace()" style="outline: 0" href="#study"><span class="glyphicon glyphicon-chevron-down" style="margin-right: 6px"></span>戳我继续</button>
     </div>
   </header>
   </div>
 
 
    <div class="life-pagehead">
-     <h1 class="h1-style">生活</h1>
+     <h1 class="h1-style"><a id="life" class="h-color">生活</a></h1>
    </div>
 
 
   <!-- first card -->
-  <div class="cir-image">
-  </div>
-  <div class="cir-image-inner">
-    <h3>hihi</h3>
-    <p></p>   
+  <div class="div1 cir-image">
+  </div><!--这里加入与背景色颜色相同的图片或icon,同时去掉边框-->
+  <div id="skate" class="cir-image-inner">
+    <h3>标题1</h3>
+    <p>iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>            
+    </p>   
   </div>
   <!-- card end -->
 
 
-<!-- first card -->
-  <div class="cir-image">
-  </div>
-  <div class="cir-image-inner">
-    <h3>hihi</h3>
-    <p></p>   
+
+<!-- second card -->
+  <div class="div1 cir-image">
+  </div><!--这里加入与背景色颜色相同的图片或icon,同时去掉边框-->
+  <div id="volunteer" class="cir-image-inner">
+     <h3>标题1</h3>
+    <p>iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>           
+    </p>     
   </div>
  <!-- card end -->
 
 
-<!-- first card -->
-  <div class="cir-image">
-  </div>
-  <div class="cir-image-inner">
-    <h3>hihi</h3>
-    <p></p>   
+<!-- third card -->
+  <div class="div1 cir-image">
+  </div><!--这里加入与背景色颜色相同的图片或icon,同时去掉边框-->
+  <div id="" class="cir-image-inner">
+     <h3>标题1</h3>
+    <p>iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>                
+    </p>    
   </div>
    <!-- card end -->
 
 
-<!-- first card -->
-  <div class="cir-image">
-  </div>
+<!-- forth card -->
+  <div class="div1 cir-image">
+  </div><!--这里加入与背景色颜色相同的图片或icon,同时去掉边框-->
   <div class="cir-image-inner">
-    <h3>hihi</h3>
-    <p>hihihihihihi</p>   
+     <h3>标题1</h3>
+    <p>iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>
+       iahfopfghsohgoihgosiehgirh<br>     
+    </p>   
   </div>
 <!-- card end -->
 
-
+<!--study -->
   <div class="life-pagehead">
-     <h1 class="h1-style">PYTHON</h1>
+     <h1 class="h1-style h-color"><a id="study" class="h-color">学习</a></h1>
     </div>
 
     <div class="lf-image">
-    </div>
+    </div><!--这里加入与背景色颜色相同的图片或icon--> 
     <div class="intro-innner">
-    <h3>hihi</h3>
-    <p></p>   
+     <h3>标题1</h3>
+    <p>dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>     
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>   dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>       
+    </p>    
     </div>
+
+<!--xxx-->
 
    <div class="life-pagehead">
-     <h1 class="h1-style">工作</h1>
+     <h1 class="h1-style h-color"><a id="xxx" class="h-color">xxx</a></h1>
    </div>
    <div class="lf-image">
-   </div>
+   </div><!--这里加入与背景色颜色相同的图片或icon-->
     <div class="intro-innner">
-    <h3>hihi</h3>
-    <p></p>   
+    <h3>标题1</h3>
+    <p>dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>     
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>     
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>   dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>     
+    </p>   
     </div>
 
-
+<!--more -->
    <div class="life-pagehead">
-     <h1 class="h1-style">更多</h1>
+     <h1 class="h1-style"><a id="more" class="h-color">更多</a></h1>
    </div>
    <div class="lf-image">
-   </div>
+   </div><!--这里加入与背景色颜色相同的图片或icon-->
     <div class="intro-innner">
-    <h3>hihi</h3>
-    <p></p>   
+   <h3>标题1</h3>
+    <p>dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>     
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>     
+       dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>dishfiohidfhsodifhsihfohsdfdshfoshdifhosidhfiohsdfhsoidfsdfsodihfosidhfsdspdfjpsdjfps<br>     
+    </p>   
     </div>
    
 
@@ -157,13 +229,12 @@
       <button class="btn2" style="margin-left: 100px"><span>WECHAT</span></button>
       </div>
       <button class="btn3"><span>EMAIL</span></button>
-      <button class="btn3" style="text-decoration:none"><a  href="https://github.com/Leslieeeeee">GITHUB<a></button>
+      <button class="btn3" style="text-decoration:none"><a  href="https://github.com/Leslieeeeee">GITHUB</a></button>
       <div id="nowtime">
-     <script>setInterval("nowtime.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);</script>
       </div>
     <div class="page-bottom">
     <div class="h1contain">
-    <h1 class="hhh1">Copyright © 2016 蚂蚁.</h1>
+    <h1 class="hhh1">xxxx Copyright © 2016 蚂蚁</h1>
     </div>
     </div>
   </div>

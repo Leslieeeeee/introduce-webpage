@@ -1,34 +1,32 @@
-
-
-$(document).ready(function showtime(){
-       
+//展示时间
+function showtime(){
         var dd = new Date()
 		var str = dd.toLocaleString()+' 星期'+'日一二三四五六'.charAt(dd.getDay())
-        document.getElementById("#nowtime").innerHTML=str()
+        document.getElementById("nowtime").innerHTML = str
    		}	
-   		setInterval("showtime()",1000)
-   		// setInterval("nowtime.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000)
-       )
+    	setInterval("showtime()",1000)
 
-$(document).ready(function jump(){
-        location.hash ='#life'
-        document.write("location.hash")
-                           
-   		})
+function changePlace()
+{
+document.getElementById('life').scrollIntoView();
+}
 
-$(document).ready(function jump(){
-        location.hash ='#more'
-        document.write("location.hash")
-                    
-   		})
-$(document).ready(function jump(){
-        location.hash ='#work'
-        document.write("location.hash")
-                    
-   		})
-$(document).ready(function jump(){
-        location.hash ='#python'
-        document.write("location.hash")
-                    
-   		})
+function changePlace1()
+{
+document.getElementById('xxx').scrollIntoView();
+}
 
+function changePlace2()
+{
+document.getElementById('study').scrollIntoView();
+}
+
+function changePlace3()
+{
+document.getElementById('more').scrollIntoView();
+}
+
+function changePlace4()
+{
+document.getElementById('home').scrollIntoView();
+}

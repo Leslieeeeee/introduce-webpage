@@ -154,7 +154,7 @@ header .header-content-inner {
 	height: 80px;
 	border-bottom: 5px solid #2c3e50;
 	color: #2c3e50;
-	margin:500px 0 0 450px;
+	margin:510px 0 0 480px;
 }
 .h1-style {
 	text-align: center;
@@ -167,18 +167,18 @@ header .header-content-inner {
 	height: 75px;
 	padding:55px;
 	float: left;
-	margin-left: 120px;
+	margin-left: 110px;
 	margin-top: 45px;
 	border:2px solid #2c3e50;
 	border-radius: 70px;
 }
 
 .cir-image-inner {
-	width: 200px;
+	width: 260px;
 	height: 280px;
 	float: left;
-	margin-left: -150px;
-	margin-top: 160px;
+	margin-left: -190px;
+	margin-top: 170px;
 	margin-right: 20px;
 	border:2px solid #2c3e50;
 	color: #000000;
@@ -208,7 +208,8 @@ header .header-content-inner {
 h3 {
 	font-size: 24px;
  	font-weight:normal; 
- 	margin-left: 70px; 
+ 	margin-left: 110px;
+ 	padding-bottom:10px; 
  	text-transform: uppercase;
 	padding-top: 2px;
  }
@@ -219,10 +220,16 @@ p {
 	font-weight: 300; 
 	line-height: 22px; 
 	padding: 0 30px; 
-	margin-bottom: 10px;
+	margin-left: 0px;
 }
 
+.h-color {
+	color: #2c3e50;
+}
 
+.h-color:focus, .h-color:active, .h-color:hover  {
+	color: #2c3e50;
+}
 .finalbottom {
 	width: 96%;
 	height: 220px;
@@ -250,7 +257,7 @@ p {
 .h1contain {
 	color: #f2f2f2;
 	position: relative;
-	margin-left: 850px;
+	margin-left: 880px;
 	margin-top: -150px;
 	padding-top: 1px;
     line-height: 2;
@@ -258,7 +265,8 @@ p {
 }
 
 .hhh1 {
-	font-size: 20px;
+	font-size: 18px;
+	margin-top: 12px;
 
 }
 
